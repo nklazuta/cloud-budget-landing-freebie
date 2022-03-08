@@ -6,16 +6,12 @@ import csv from "../../images/csv-icon.svg";
 
 function Techs() {
   return (
-    <section className="techs">
+    <section className="techs" id="techs">
       <h3 className="techs__heading">Technology</h3>
       <ul className="techs__list">
         <li className="techs__item">
           <p className="techs__number">01</p>
-          <img
-            className="techs__image"
-            src={cloud}
-            alt="Cloud storage icon"
-          />
+          <img className="techs__image" src={cloud} alt="Cloud storage icon" />
           <p className="techs__title">Cloud Storage</p>
           <p className="techs__text">
             Access your account from anywhere in the world on any device
@@ -23,11 +19,7 @@ function Techs() {
         </li>
         <li className="techs__item">
           <p className="techs__number">02</p>
-          <img
-            className="techs__image"
-            src={secure}
-            alt="Secure icon"
-          />
+          <img className="techs__image" src={secure} alt="Secure icon" />
           <p className="techs__title">Secure</p>
           <p className="techs__text">
             All your information is stored on secure cloud servers

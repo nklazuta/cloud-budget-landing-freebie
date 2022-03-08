@@ -6,7 +6,7 @@ import photo3 from "../../images/card-photo3.jpg";
 
 function Features() {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <h3 className="features__heading">Features</h3>
       <ul className="features__cards">
         <Card

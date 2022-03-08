@@ -3,7 +3,7 @@ import "./Promo.scss";
 
 export default function Promo() {
   return (
-    <section className="promo">
+    <section className="promo" id="overview">
       <h1 className="promo__heading">CloudBudget</h1>
       <h2 className="promo__subtitle">
         Cloud budget management for everyone. Only €69.95 a Month After a 7 Day

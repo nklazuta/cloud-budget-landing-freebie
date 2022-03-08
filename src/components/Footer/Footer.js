@@ -19,52 +19,27 @@ function Footer() {
         <p className="footer__title">Services</p>
         <ul className="footer__links">
           <li className="footer__item">
-            <a
-              className="footer__link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__link" href="#overview">
               Overview
             </a>
           </li>
           <li className="footer__item">
-            <a
-              className="footer__link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__link" href="#features">
               Features
             </a>
           </li>
           <li className="footer__item">
-            <a
-              className="footer__link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__link" href="#techs">
               Technology
             </a>
           </li>
           <li className="footer__item">
-            <a
-              className="footer__link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__link" href="#" target="_self">
               Terms & Conditions
             </a>
           </li>
           <li className="footer__item">
-            <a
-              className="footer__link"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a className="footer__link" href="#" target="_self">
               Privecy
             </a>
           </li>

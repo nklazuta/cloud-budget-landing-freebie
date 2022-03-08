@@ -1,44 +1,23 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
 
 function Navigation() {
   return (
     <nav className="navigation">
-      <NavLink
-        to="#"
-        className="navigation__link"
-        activeClassName="navigation__link_active"
-      >
+      <a href="#overview" className="navigation__link navigation__link_active">
         Overview
-      </NavLink>
-      <NavLink
-        to="#"
-        className="navigation__link"
-        activeClassName="navigation__link_active"
-      >
+      </a>
+      <a href="#features" className="navigation__link">
         Features
-      </NavLink>
-      <NavLink
-        to="#"
-        className="navigation__link"
-        activeClassName="navigation__link_active"
-      >
+      </a>
+      <a href="#techs" className="navigation__link">
         Technology
-      </NavLink>
-      <NavLink
-        to="#"
-        className="navigation__link"
-        activeClassName="navigation__link_active"
-      >
+      </a>
+      <a href="#contact" className="navigation__link">
         Contact
-      </NavLink>
-      <NavLink
-        to="#"
-        className="navigation__link"
-        activeClassName="navigation__link_active"
-      >
+      </a>
+      <a href="#" className="navigation__link">
         Sign Up
-      </NavLink>
+      </a>
     </nav>
   );
 }
