@@ -4,6 +4,7 @@ import Promo from '../Promo/Promo';
 import VideoSection from '../VideoSection/VideoSection';
 import Features from '../Features/Features';
 import Techs from '../Techs/Techs';
+import AppDownload from '../AppDownload/AppDownload';
 import Footer from '../Footer/Footer';
 import './App.scss';
 
@@ -16,6 +17,7 @@ function App() {
         <VideoSection />
         <Features />
         <Techs />
+        <AppDownload />
       </main>
       <Footer />
     </div>
