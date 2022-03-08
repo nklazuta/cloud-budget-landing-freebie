@@ -1,6 +1,6 @@
 import React from "react";
 import play from "../../images/play-button.svg";
-import video from "../../images/video.svg";
+import video from "../../images/video.jpg";
 
 function VideoSection() {
   return (
@@ -29,13 +29,13 @@ function VideoSection() {
           <img
             className="video__play-icon"
             src={play}
-            alt="Кнопка проигрывания видео"
+            alt="Video playback button"
           />
         </button>
         <img
           className="video__video-image"
           src={video}
-          alt="Здесь должно быть видео"
+          alt="This must be a video"
         />
       </div>
     </section>

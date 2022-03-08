@@ -5,12 +5,16 @@ import arrow from "../../images/arrow.svg";
 function Language() {
   return (
     <button className="">
-      <img className="header__flag" src={flag} alt="Иконка выбранного языка" />
+      <img
+        className="header__flag"
+        src={flag}
+        alt="Flag for selected language"
+      />
       <p className="header__language">En</p>
       <img
         className="header__arrow"
         src={arrow}
-        alt="Стрелка для выбора языка"
+        alt="Arrow to select language"
       />
     </button>
   );

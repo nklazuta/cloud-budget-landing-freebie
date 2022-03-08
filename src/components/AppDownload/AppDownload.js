@@ -62,9 +62,9 @@ function AppDownload() {
         </ul>
       </div>
       <div className="download__photo-block">
-        <img className="download__image" src={photo1} alt="Image" />
-        <img className="download__image" src={photo2} alt="Image" />
-        <img className="download__image" src={photo3} alt="Image" />
+        <img className="download__image" src={photo1} alt="Decorative picture" />
+        <img className="download__image" src={photo2} alt="Decorative picture" />
+        <img className="download__image" src={photo3} alt="Decorative picture" />
       </div>
     </section>
   );
