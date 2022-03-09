@@ -1,0 +1,29 @@
+%font-bold {
+  font-style: normal;
+  font-weight: 700;
+}
+
+%font-semibold {
+  font-style: normal;
+  font-weight: 600;
+}
+
+%font-regular {
+  font-style: normal;
+  font-weight: 400;
+}
+
+%button-animation {
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+%list-decoration {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

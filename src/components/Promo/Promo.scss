@@ -1,16 +1,52 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
 .promo {
   width: 100%;
-    height: 100%;
   background-image: url("../../images/promo.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+  text-align: center;
 
   .promo__background {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(
-      90deg, rgba(156, 44, 68, 0.8), rgba(238, 61, 27, 0.8)
-    );
+    background-image: $red-gradient;
+    padding: 17.85% 0 12.99%;
+
+    .promo__heading {
+      @extend %font-bold;
+      font-size: 72px;
+      line-height: 1.19;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: $white;
+      margin: $margin-center;
+    }
+
+    .promo__subtitle {
+      @extend %font-semibold;
+      max-width: 540px;
+      font-size: 24px;
+      line-height: 1.5;
+      color: $white;
+      margin: $margin-center;
+      padding: 2.71% 0;
+    }
+
+    .promo__sign-up-button {
+      @extend %font-semibold;
+      @extend %button-animation;
+      background: $white;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      line-height: 1.21;
+      text-transform: uppercase;
+      color: $text-red;
+      margin: $margin-center;
+      padding: 17px 53px;
+    }
   }
 }
