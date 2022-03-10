@@ -15,10 +15,10 @@
 
     .video__heading {
       @extend %font-semibold;
-      height: 107px;
       font-size: 36px;
       line-height: 1.19;
       margin: 0;
+      padding-bottom: 4.72%;
     }
 
     .video__text {
@@ -35,8 +35,10 @@
       @extend %button-animation;
       font-size: 14px;
       line-height: 1.4;
-      text-decoration: none;
+      border: none;
+      background-color: $transparent;
       color: $text-red;
+      padding: 0;
     }
   }
 

@@ -15,14 +15,9 @@ function VideoSection() {
           income and expense reports with graphs so you can easilly see your
           spending patterns and budget at a glance. Read below to find out more.
         </p>
-        <a
-          className="video__link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <button className="video__link" type="button">
           Learn More
-        </a>
+        </button>
       </div>
       <div className="video__video-block">
         <button className="video__play-button" type="button">
