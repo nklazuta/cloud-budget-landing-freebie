@@ -1,0 +1,75 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
+.techs {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 4.38% 11.46% 7.22%;
+
+  .techs__heading {
+    @extend %font-semibold;
+    font-size: 36px;
+    line-height: 1.19;
+    margin: 0 0 4.68%;
+    padding-bottom: 1.1%;
+  }
+
+  .techs__list {
+    @extend %list-decoration;
+    display: flex;
+    gap: 2.7%;
+
+    .techs__item {
+      width: 23%;
+      padding: 0 30px 4px 34px;
+
+      .techs__number {
+        @extend %font-bold;
+        font-size: 100px;
+        line-height: 1.2;
+        color: $text-grey;
+        position: relative;
+        margin: 0;
+
+        .techs__icon {
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          bottom: -19px;
+          left: 53px;
+        }
+
+        .techs__icon_type_secure {
+          width: 66px;
+          height: 66px;
+          bottom: -11px;
+          left: 60px;
+        }
+
+        .techs__icon_type_download {
+          width: 47px;
+          height: 54px;
+          bottom: -5px;
+          left: 70px;
+        }
+      }
+
+      .techs__title {
+        @extend %font-bold;
+        font-size: 18px;
+        line-height: 1.22;
+        color: $text-dark;
+        margin: 19px 0 10px;
+      }
+
+      .techs__text {
+        @extend %font-regular;
+        font-size: 12px;
+        line-height: 1.17;
+        margin: 0;
+        padding-bottom: 23px;
+      }
+    }
+  }
+}
