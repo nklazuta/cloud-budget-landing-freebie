@@ -1,0 +1,66 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
+.header {
+  width: 100%;
+  max-width: 1440px;
+  margin: $margin-center;
+  padding: 2.29% 11.67% 1.88%;
+  position: absolute;
+  top: 17px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+  .header__box {
+    display: flex;
+
+    .header__language {
+      @extend %button-animation;
+      padding: 0;
+      border: none;
+      background: $transparent;
+      display: flex;
+      align-items: center;
+  
+      .header__flag {
+        width: 32px;
+        height: 32px;
+        padding-right: 11px;
+      }
+  
+      .header__name {
+        @extend %font-regular;
+        font-size: 14px;
+        line-height: 1.21;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0;
+        padding-right: 14px;
+      }
+  
+      .header__arrow {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  
+    .header__login {
+      @extend %font-regular;
+      @extend %button-animation;
+      width: 100px;
+      font-size: 14px;
+      line-height: 1.21;
+      text-transform: uppercase;
+      color: $white;
+      padding: 12px 29px;
+      margin-left: 26px;
+      background-color: $transparent;
+      border: 1px solid $white;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+  }
+}
