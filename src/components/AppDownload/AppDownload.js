@@ -39,7 +39,7 @@ function AppDownload() {
           <li className="download__item">
             <button className="download__link" type="button">
               <img
-                className="download__icon"
+                className="download__icon download__icon_type_windows"
                 src={windows}
                 alt="Windows Store Icon"
               />
@@ -48,21 +48,9 @@ function AppDownload() {
         </ul>
       </div>
       <div className="download__photo-block">
-        <img
-          className="download__image"
-          src={photo1}
-          alt="Decorative picture"
-        />
-        <img
-          className="download__image"
-          src={photo2}
-          alt="Decorative picture"
-        />
-        <img
-          className="download__image"
-          src={photo3}
-          alt="Decorative picture"
-        />
+        <div className="download__back-image" />
+        <div className="download__back-image download__back-image_type_another" />
+        <div className="download__image" />
       </div>
     </section>
   );

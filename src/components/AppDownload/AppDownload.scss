@@ -4,24 +4,56 @@
 .download {
   width: 100%;
   box-sizing: border-box;
+  background-color: $coral;
   display: flex;
   justify-content: flex-start;
   padding: 6.6% 11.46%;
-  
-  .download__text-block {
-    .download__heading {
 
+  .download__text-block {
+    width: 40%;
+    max-width: 445px;
+    padding: 2.52% 7.3% 0 0;
+
+    .download__heading {
+      @extend %font-semibold;
+      font-size: 36px;
+      line-height: 1.19;
+      color: $white;
+      margin: 0;
+      padding-bottom: 4.72%;
     }
 
     .download__text {
-
+      @extend %font-regular;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: justify;
+      color: $white;
+      margin: 0;
+      padding: 5.4% 0 9%;
     }
 
     .download__links {
+      @extend %list-decoration;
+      display: flex;
+      align-items: center;
+      gap: 5.6%;
+
       .download__item {
         .download__link {
-          .download__icon {
+          @extend %button-animation;
+          border: none;
+          background-color: $transparent;
+          padding: 0;
 
+          .download__icon {
+            width: 32px;
+            height: 32px;
+          }
+
+          .download__icon_type_windows {
+            width: 24px;
+            height: 24px;
           }
         }
       }
@@ -29,8 +61,39 @@
   }
 
   .download__photo-block {
-    .download__image {
+    width: 48%;
+    max-width: 533px;
+    position: relative;
+    display: flex;
 
+    .download__back-image {
+      width: 100%;
+      height: 85.85%;
+      background-image: url("../../images/download-photo2.jpg");
+      background-size: 71.85% auto;
+      background-position: left;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      position: absolute;
+      top: 7.07%;
+    }
+
+    .download__back-image_type_another {
+      background-image: url("../../images/download-photo3.jpg");
+      background-position: right;
+    }
+
+    .download__image {
+      width: 83.5%;
+      max-width: 445px;
+      height: 100%;
+      background-image: url("../../images/download-photo1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      position: absolute;
+      left: 8.26%;
     }
   }
 }
