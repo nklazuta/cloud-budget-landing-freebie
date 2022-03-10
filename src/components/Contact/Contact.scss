@@ -1,0 +1,96 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
+.contact {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 8.13% 11.46% 5.42% 12.22%;
+
+  .contact__text-block {
+    width: 40%;
+    max-width: 445px;
+    padding-right: 11.36%;
+
+    .contact__heading {
+      @extend %font-semibold;
+      font-size: 36px;
+      line-height: 1.19;
+      margin: 0;
+      padding-bottom: 14.65%;
+    }
+
+    .contact__text {
+      @extend %font-regular;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: justify;
+      margin: 0;
+    }
+  }
+
+  .contact__form {
+    width: 49%;
+    max-width: 540px;
+    display: grid;
+    row-gap: 24px;
+    column-gap: 30px;
+    grid-template-areas:
+      "first-name surname"
+      "phone phone"
+      "select select"
+      "submit .";
+
+    .contact__input {
+      width: 100%;
+      border: 1px solid $border-grey;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 21px 31px;
+
+      &::placeholder {
+        @extend %font-regular;
+        font-size: 16px;
+        line-height: 1.19;
+        color: $placeholder;
+      }
+    }
+
+    .contact__input_type_name {
+      grid-area: first-name;
+    }
+
+    .contact__input_type_surname {
+      grid-area: surname;
+    }
+
+    .contact__input_type_phone {
+      grid-area: phone;
+    }
+
+    .contact__input_type_select {
+      grid-area: select;
+      width: 100%;
+      border: 1px solid $border-grey;
+      box-sizing: border-box;
+      border-radius: 6px;
+      padding: 21px 31px;
+    }
+
+    .contact__submit-button {
+      @extend %font-regular;
+      @extend %button-animation;
+      grid-area: submit;
+      max-width: 160px;
+      background: $coral;
+      border-radius: 6px;
+      border: 1.5px solid $coral;
+      font-size: 14px;
+      line-height: 1.21;
+      text-transform: uppercase;
+      color: $white;
+      padding: 17px 32px;
+    }
+  }
+}
