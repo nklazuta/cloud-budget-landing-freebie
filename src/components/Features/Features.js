@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import photo1 from "../../images/card-photo1.jpg";
 import photo2 from "../../images/card-photo2.jpg";
 import photo3 from "../../images/card-photo3.jpg";
+import "./Features.scss";
 
 function Features() {
   return (
