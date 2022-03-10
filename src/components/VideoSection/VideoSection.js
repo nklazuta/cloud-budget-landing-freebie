@@ -1,12 +1,12 @@
 import React from "react";
 import play from "../../images/play-button.svg";
-import video from "../../images/video.jpg";
+import "./VideoSection.scss";
 
 function VideoSection() {
   return (
     <section className="video">
       <div className="video__text-block">
-        <h3 className="video__title">
+        <h3 className="video__heading">
           Easy to Use Cloud Budget Management Software
         </h3>
         <p className="video__text">
@@ -32,11 +32,6 @@ function VideoSection() {
             alt="Video playback button"
           />
         </button>
-        <img
-          className="video__video-image"
-          src={video}
-          alt="This must be a video"
-        />
       </div>
     </section>
   );
