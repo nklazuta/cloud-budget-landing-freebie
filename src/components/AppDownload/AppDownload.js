@@ -2,9 +2,6 @@ import React from "react";
 import playstore from "../../images/google-playstore-icon.svg";
 import appstore from "../../images/apple-appstore-icon.svg";
 import windows from "../../images/windows-icon.svg";
-import photo1 from "../../images/download-photo1.jpg";
-import photo2 from "../../images/download-photo2.jpg";
-import photo3 from "../../images/download-photo3.jpg";
 import "./AppDownload.scss";
 
 function AppDownload() {
