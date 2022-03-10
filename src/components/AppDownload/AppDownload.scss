@@ -1,0 +1,36 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
+.download {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  padding: 6.6% 11.46%;
+  
+  .download__text-block {
+    .download__heading {
+
+    }
+
+    .download__text {
+
+    }
+
+    .download__links {
+      .download__item {
+        .download__link {
+          .download__icon {
+
+          }
+        }
+      }
+    }
+  }
+
+  .download__photo-block {
+    .download__image {
+
+    }
+  }
+}
