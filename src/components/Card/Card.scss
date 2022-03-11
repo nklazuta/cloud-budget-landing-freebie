@@ -55,3 +55,75 @@
     }
   }
 }
+
+@media screen and (max-width: 1180px) {
+  .card {
+    .card__text-block {
+      padding: 8.43% 7% 6.14%;
+
+      .card__title {
+        font-size: 16px;
+      }
+
+      .card__text {
+        font-size: 10px;
+      }
+
+      .card__link {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .card {
+    .card__text-block {
+      .card__title {
+        font-size: 14px;
+      }
+
+      .card__text {
+        font-size: 9px;
+      }
+
+      .card__link {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 70%;
+    padding-bottom: 25%;
+
+    .card__text-block {
+      top: 42%;
+
+      .card__title {
+        font-size: 12px;
+      }
+
+      .card__text {
+        font-size: 10px;
+        padding-bottom: 3%;
+      }
+
+      .card__link {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    .card__text-block {
+      .card__text {
+        display: none;
+      }
+    }
+  }
+}
