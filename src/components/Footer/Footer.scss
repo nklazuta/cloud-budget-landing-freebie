@@ -1,0 +1,117 @@
+@import "../../sass/helpers/variables";
+@import "../../sass/helpers/placeholders";
+
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $light-grey;
+  padding: 5.9% 11.53%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.7%;
+  grid-template-areas:
+    "address services contacts payments"
+    "copyright copyright copyright copyright";
+
+  .footer__text-block {
+    width: 100%;
+    max-width: 254px;
+
+    .footer__title {
+      @extend %font-bold;
+      font-size: 18px;
+      line-height: 1.22;
+      color: $text-dark;
+      margin: 0;
+      padding-bottom: 13%;
+    }
+
+    .footer__text {
+      @extend %font-regular;
+      font-size: 12px;
+      line-height: 1.5;
+      color: $text-dark;
+      margin: 0;
+      padding-right: 20%;
+    }
+
+    .footer__text_type_mail {
+      line-height: 1.17;
+    }
+
+    .footer__text_type_phone {
+      line-height: 1.17;
+      color: $text-contact;
+      padding-top: 4.33%;
+    }
+
+    .footer__links {
+      @extend %list-decoration;
+      padding-right: 20%;
+
+      .footer__item {
+        .footer__link {
+          @extend %font-regular;
+          @extend %button-animation;
+          font-size: 12px;
+          line-height: 1.6;
+          text-decoration: none;
+          color: $text-black;
+        }
+      }
+    }
+
+    .footer__social-media {
+      @extend %list-decoration;
+      display: flex;
+      align-items: center;
+      padding-top: 7.9%;
+
+      .footer__item {
+        padding-right: 13px;
+
+        .footer__media {
+          @extend %button-animation;
+
+          .footer__icon {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+
+    .footer__payments {
+      width: 85%;
+      max-width: 216px;
+    }
+  }
+
+  .footer__text-block_type_address {
+    grid-area: address;
+  }
+
+  .footer__text-block_type_services {
+    grid-area: services;
+  }
+
+  .footer__text-block_type_contacts {
+    grid-area: contacts;
+  }
+
+  .footer__text-block_type_payments {
+    grid-area: payments;
+  }
+
+  .footer__copyright {
+    @extend %font-regular;
+    grid-area: copyright;
+    font-size: 12px;
+    line-height: 1.17;
+    color: $text-dark;
+    position: relative;
+    left: -5px;
+    margin: 0;
+    padding-top: 8.6%;
+  }
+}
