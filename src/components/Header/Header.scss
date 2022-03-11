@@ -15,22 +15,25 @@
   z-index: 1;
 
   .header__box {
+    width: 19.64%;
     display: flex;
+    gap: 12%;
 
     .header__language {
       @extend %button-animation;
+      width: 42.4%;
       padding: 0;
       border: none;
       background: $transparent;
       display: flex;
       align-items: center;
-  
+
       .header__flag {
         width: 32px;
         height: 32px;
         padding-right: 11px;
       }
-  
+
       .header__name {
         @extend %font-regular;
         font-size: 14px;
@@ -38,29 +41,113 @@
         text-transform: uppercase;
         color: $white;
         margin: 0;
-        padding-right: 14px;
+        padding-right: 15.4%;
       }
-  
+
       .header__arrow {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
       }
     }
-  
+
     .header__login {
       @extend %font-regular;
       @extend %button-animation;
-      width: 100px;
+      max-width: 100px;
       font-size: 14px;
       line-height: 1.21;
       text-transform: uppercase;
       color: $white;
-      padding: 12px 29px;
-      margin-left: 26px;
+      padding: 5.5% 13.4%;
       background-color: $transparent;
       border: 1px solid $white;
       box-sizing: border-box;
       border-radius: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .header {
+    .header__box {
+      width: 25%;
+
+      .header__language {
+        .header__flag {
+          width: 30px;
+          height: 30px;
+        }
+
+        .header__name {
+          font-size: 13px;
+        }
+
+        .header__arrow {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .header__login {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    .header__box {
+      width: 33%;
+
+      .header__language {
+        .header__flag {
+          width: 27px;
+          height: 27px;
+          padding-right: 8px;
+        }
+
+        .header__name {
+          font-size: 12px;
+        }
+
+        .header__arrow {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .header__login {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header {
+    .header__box {
+      width: 38%;
+
+      .header__language {
+        .header__flag {
+          width: 22px;
+          height: 22px;
+          padding-right: 5px;
+        }
+
+        .header__name {
+          font-size: 10px;
+        }
+
+        .header__arrow {
+          display: none;
+        }
+      }
+
+      .header__login {
+        font-size: 10px;
+      }
     }
   }
 }

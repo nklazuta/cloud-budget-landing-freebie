@@ -6,7 +6,6 @@
   background-image: url("../../images/promo.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
   text-align: center;
 
   .promo__background {
@@ -46,7 +45,66 @@
       text-transform: uppercase;
       color: $coral;
       margin: $margin-center;
-      padding: 17px 53px;
+      padding: 1.18% 3.68%;
     }
   }
 }
+
+@media screen and (max-width: 1180px) {
+  .promo {
+    .promo__background {
+      .promo__heading {
+        font-size: 68px;
+      }
+  
+      .promo__subtitle {
+        max-width: 450px;
+        font-size: 20px;
+      }
+  
+      .promo__sign-up-button {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .promo {
+    .promo__background {
+      .promo__heading {
+        font-size: 54px;
+      }
+  
+      .promo__subtitle {
+        max-width: 350px;
+        font-size: 16px;
+      }
+  
+      .promo__sign-up-button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .promo {
+    .promo__background {
+      .promo__heading {
+        font-size: 32px;
+        padding-top: 20px;
+      }
+  
+      .promo__subtitle {
+        max-width: 260px;
+        font-size: 11px;
+      }
+  
+      .promo__sign-up-button {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
