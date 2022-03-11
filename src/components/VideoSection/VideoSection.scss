@@ -11,7 +11,7 @@
   .video__text-block {
     width: 40%;
     max-width: 445px;
-    padding: 45px 125px 15px 0;
+    padding: 4% 11.3% 1.35% 0;
 
     .video__heading {
       @extend %font-semibold;
@@ -27,7 +27,7 @@
       line-height: 1.4;
       text-align: justify;
       margin: 0;
-      padding: 24px 0;
+      padding: 5.4% 0;
     }
 
     .video__link {
@@ -65,6 +65,76 @@
       .video__play-icon {
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .video {
+    .video__text-block {
+      .video__heading {
+        font-size: 30px;
+      }
+
+      .video__text {
+        font-size: 13px;
+      }
+
+      .video__link {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .video {
+    .video__text-block {
+      .video__heading {
+        font-size: 20px;
+      }
+
+      .video__text {
+        font-size: 10px;
+      }
+
+      .video__link {
+        font-size: 10px;
+        padding-bottom: 7%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .video {
+    flex-direction: column;
+
+    .video__text-block {
+      width: 100%;
+
+      .video__heading {
+        font-size: 18px;
+      }
+
+      .video__text {
+        font-size: 10px;
+      }
+
+      .video__link {
+        font-size: 10px;
+      }
+    }
+
+    .video__video-block {
+      width: 100%;
+      min-height: 200px;
+      background-position: left;
+
+      .video__play-icon {
+        max-width: 35px;
+        max-height: 35px;
       }
     }
   }
