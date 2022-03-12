@@ -22,36 +22,37 @@
 
     .techs__item {
       width: 23%;
-      padding: 0 30px 4px 34px;
+      padding: 0 2.7% 4px 3.06%;
 
       .techs__number {
         @extend %font-bold;
+        max-width: 117px;
         font-size: 100px;
         line-height: 1.2;
         color: $text-grey;
         position: relative;
-        margin: 0;
+        margin: $margin-center;
 
         .techs__icon {
           width: 80px;
           height: 80px;
           position: absolute;
-          bottom: -19px;
-          left: 53px;
+          bottom: -15.8%;
+          left: 16.24%;
         }
 
         .techs__icon_type_secure {
           width: 66px;
           height: 66px;
-          bottom: -11px;
-          left: 60px;
+          bottom: -9.17%;
+          left: 22.22%;
         }
 
         .techs__icon_type_download {
           width: 47px;
           height: 54px;
-          bottom: -5px;
-          left: 70px;
+          bottom: -4.17%;
+          left: 29.91%;
         }
       }
 
@@ -60,7 +61,7 @@
         font-size: 18px;
         line-height: 1.22;
         color: $text-dark;
-        margin: 19px 0 10px;
+        margin: 9.95% 0 5.24%;
       }
 
       .techs__text {
@@ -68,7 +69,175 @@
         font-size: 12px;
         line-height: 1.17;
         margin: 0;
-        padding-bottom: 23px;
+        padding-bottom: 12%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .techs {
+    .techs__heading {
+      font-size: 30px;
+    }
+
+    .techs__list {
+      .techs__item {
+        padding: 0 2.7% 4px;
+
+        .techs__number {
+          max-width: 110px;
+          font-size: 90px;
+
+          .techs__icon {
+            width: 70px;
+            height: 70px;
+          }
+
+          .techs__icon_type_secure {
+            width: 62px;
+            height: 62px;
+          }
+
+          .techs__icon_type_download {
+            width: 43px;
+            height: 50px;
+          }
+        }
+
+        .techs__title {
+          font-size: 16px;
+        }
+
+        .techs__text {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .techs {
+    .techs__heading {
+      font-size: 20px;
+    }
+
+    .techs__list {
+      .techs__item {
+        padding: 0 2% 3px;
+
+        .techs__number {
+          max-width: 100px;
+          font-size: 80px;
+
+          .techs__icon {
+            width: 65px;
+            height: 65px;
+          }
+
+          .techs__icon_type_secure {
+            width: 56px;
+            height: 56px;
+            bottom: -9.9%;
+          }
+
+          .techs__icon_type_download {
+            width: 40px;
+            height: 45px;
+            bottom: -6%;
+          }
+        }
+
+        .techs__title {
+          font-size: 14px;
+          margin-top: 15%;
+        }
+
+        .techs__text {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .techs {
+    .techs__heading {
+      font-size: 18px;
+    }
+
+    .techs__list {
+      .techs__item {
+        .techs__number {
+          max-width: 75px;
+          font-size: 65px;
+
+          .techs__icon {
+            width: 54px;
+            height: 54px;
+          }
+
+          .techs__icon_type_secure {
+            width: 44px;
+            height: 44px;
+          }
+
+          .techs__icon_type_download {
+            width: 32px;
+            height: 38px;
+          }
+        }
+
+        .techs__title {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .techs {
+    .techs__heading {
+      font-size: 18px;
+    }
+
+    .techs__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      column-gap: 5%;
+
+      .techs__item {
+        width: 100%;
+
+        .techs__number {
+          max-width: 90px;
+          font-size: 75px;
+
+          .techs__icon {
+            width: 62px;
+            height: 62px;
+          }
+
+          .techs__icon_type_secure {
+            width: 51px;
+            height: 51px;
+          }
+
+          .techs__icon_type_download {
+            width: 37px;
+            height: 42px;
+          }
+        }
+
+        .techs__text {
+          max-width: 180px;
+          margin: $margin-center;
+        }
       }
     }
   }
