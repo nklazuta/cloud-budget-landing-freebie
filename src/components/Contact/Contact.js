@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.scss";
 
 function Contact() {
+  const [values, setValues] = useState({});
+
+  const handleChange = (evt) => {
+    const input = evt.target;
+    const value = input.value;
+    const name = input.name;
+
+    setValues({ ...values, [name]: value });
+  };
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+    console.log(values);
+    setValues({});
+  }
+
   return (
     <section className="contact" id="contact">
       <div className="contact__text-block">
@@ -11,21 +27,25 @@ function Contact() {
           team will get back to you within 24 hours
         </p>
       </div>
-      <form className="contact__form">
+      <form className="contact__form" onSubmit={handleSubmit}>
         <input
           className="contact__input contact__input_type_name"
-          name="first-name"
+          name="name"
           type="text"
           placeholder="First Name"
           autoComplete="first-name"
+          value={values.name || ""}
+          onChange={handleChange}
           required
         />
         <input
           className="contact__input contact__input_type_surname"
-          name="last-name"
+          name="surname"
           type="text"
           placeholder="Last Name"
           autoComplete="last-name"
+          value={values.surname || ""}
+          onChange={handleChange}
           required
         />
         <input
@@ -34,6 +54,8 @@ function Contact() {
           type="tel"
           placeholder="Phone Number"
           autoComplete="phone"
+          value={values.phone || ""}
+          onChange={handleChange}
           required
         />
         <select className="contact__select" name="service">
