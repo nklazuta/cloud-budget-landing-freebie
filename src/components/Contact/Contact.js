@@ -36,7 +36,7 @@ function Contact() {
           autoComplete="phone"
           required
         />
-        <select className="contact__input contact__input_type_select" name="service">
+        <select className="contact__select" name="service">
           <option className="contact__option">Select Service</option>
         </select>
         <button className="contact__submit-button" type="submit">
