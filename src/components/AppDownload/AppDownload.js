@@ -46,7 +46,6 @@ function AppDownload() {
       </div>
       <div className="download__photo-block">
         <div className="download__back-image" />
-        <div className="download__back-image download__back-image_type_another" />
         <div className="download__image" />
       </div>
     </section>
