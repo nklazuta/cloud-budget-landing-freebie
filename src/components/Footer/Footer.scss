@@ -115,3 +115,106 @@
     padding-top: 8.6%;
   }
 }
+
+@media screen and (max-width: 1180px) {
+  .footer {
+    .footer__text-block {
+      .footer__title {
+        font-size: 16px;
+      }
+
+      .footer__text {
+        font-size: 11px;
+      }
+
+      .footer__links {
+        .footer__item {
+          .footer__link {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .footer__copyright {
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    .footer__text-block {
+      .footer__title {
+        font-size: 14px;
+      }
+
+      .footer__text {
+        font-size: 10px;
+      }
+
+      .footer__links {
+        .footer__item {
+          .footer__link {
+            font-size: 10px;
+          }
+        }
+      }
+
+      .footer__social-media {
+        .footer__item {
+          padding-right: 11px;
+
+          .footer__media {
+            .footer__icon {
+              width: 11px;
+              height: 11px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__copyright {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "address services"
+      "payments contacts"
+      "copyright copyright";
+
+    .footer__text-block {
+      .footer__title {
+        font-size: 13px;
+        padding-bottom: 6.5%;
+      }
+
+      .footer__links {
+        padding-bottom: 15%;
+      }
+
+      .footer__social-media {
+        .footer__item {
+          padding-right: 10px;
+
+          .footer__media {
+            .footer__icon {
+              width: 10px;
+              height: 10px;
+            }
+          }
+        }
+      }
+
+      .footer__payments {
+        width: 80%;
+      }
+    }
+  }
+}
