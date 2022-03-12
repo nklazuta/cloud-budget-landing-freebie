@@ -4,7 +4,7 @@
 .download {
   width: 100%;
   box-sizing: border-box;
-  background-color: $coral;
+  background: $coral;
   display: flex;
   justify-content: flex-start;
   padding: 6.6% 11.46%;
@@ -17,20 +17,16 @@
 
     .download__heading {
       @extend %font-semibold;
-      font-size: 36px;
-      line-height: 1.19;
+      @extend %heading-laptop;
       color: $white;
-      margin: 0;
       padding-bottom: 4.72%;
     }
 
     .download__text {
       @extend %font-regular;
-      font-size: 14px;
-      line-height: 1.4;
-      text-align: justify;
+      @extend %text-laptop;
+      text-align: $text-justify;
       color: $white;
-      margin: 0;
       padding: 5.4% 0 9%;
     }
 
@@ -42,9 +38,8 @@
 
       .download__item {
         .download__link {
-          @extend %button-animation;
-          border: none;
-          background-color: $transparent;
+          @extend %transparent-button;
+          @extend %hover-animation;
           padding: 0;
 
           .download__icon {
@@ -87,8 +82,7 @@
       background-image: url("../../images/download-photo1.jpg");
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 16px;
+      border-radius: 15px;
       position: absolute;
       left: 8.26%;
     }
@@ -103,7 +97,7 @@
       }
 
       .download__text {
-        font-size: 12px;
+        font-size: $text-medium;
       }
 
       .download__links {
@@ -133,7 +127,7 @@
       }
 
       .download__text {
-        font-size: 10px;
+        font-size: $text-small;
       }
 
       .download__links {
@@ -167,7 +161,7 @@
       width: 70%;
 
       .download__heading {
-        font-size: 18px;
+        font-size: $heading-mobile;
       }
 
       .download__links {

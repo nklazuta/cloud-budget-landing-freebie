@@ -1,3 +1,4 @@
+//Жирность текста
 %font-bold {
   font-style: normal;
   font-weight: 700;
@@ -13,7 +14,46 @@
   font-weight: 400;
 }
 
-%button-animation {
+//Стили теста шапки страницы
+%text-caps-white {
+  text-transform: uppercase;
+  color: $white;
+}
+
+//Стили основных заголовков и текста в компонентах
+%heading-laptop {
+  font-size: 36px;
+  line-height: 1.19;
+  margin: 0;
+}
+
+%text-laptop {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+//Стили заголовков и текста в карточках и подвале
+%title-laptop {
+  font-size: 18px;
+  line-height: 1.22;
+  color: $text-dark;
+}
+
+%text-big-line {
+  font-size: 12px;
+  line-height: 1.5;
+  color: $text-dark;
+}
+
+%text-small-line {
+  font-size: 12px;
+  line-height: 1.17;
+  margin: 0;
+}
+
+//Анимация кнопок и ссылок
+%hover-animation {
   cursor: pointer;
   transition: opacity 0.5s ease;
 
@@ -22,14 +62,35 @@
   }
 }
 
+//Сброс стилей по умолчанию для списков
 %list-decoration {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+//Стили инпутов
 %input-decoration {
   border: 1px solid $border-grey;
   box-sizing: border-box;
   border-radius: 6px;
+}
+
+%text-input {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+//Стили кнопок
+%button-decoration {
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+//Стили иконок
+%transparent-button {
+  border: none;
+  background: $transparent;
 }

@@ -11,12 +11,11 @@
 
       .navigation__link {
         @extend %font-regular;
-        @extend %button-animation;
+        @extend %hover-animation;
+        @extend %text-caps-white;
         font-size: 14px;
         line-height: 1.21;
         text-decoration: none;
-        text-transform: uppercase;
-        color: $white;
       }
 
       .navigation__link_active {

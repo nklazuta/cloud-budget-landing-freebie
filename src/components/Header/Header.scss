@@ -20,11 +20,10 @@
     gap: 12%;
 
     .header__language {
-      @extend %button-animation;
+      @extend %hover-animation;
+      @extend %transparent-button;
       width: 42.4%;
       padding: 0;
-      border: none;
-      background: $transparent;
       display: flex;
       align-items: center;
 
@@ -36,10 +35,9 @@
 
       .header__name {
         @extend %font-regular;
+        @extend %text-caps-white;
         font-size: 14px;
         line-height: 1.21;
-        text-transform: uppercase;
-        color: $white;
         margin: 0;
         padding-right: 15.4%;
       }
@@ -52,17 +50,13 @@
 
     .header__login {
       @extend %font-regular;
-      @extend %button-animation;
+      @extend %hover-animation;
+      @extend %button-decoration;
+      @extend %text-caps-white;
       max-width: 100px;
-      font-size: 14px;
-      line-height: 1.21;
-      text-transform: uppercase;
-      color: $white;
       padding: 5.5% 13.4%;
-      background-color: $transparent;
+      background: $transparent;
       border: 1px solid $white;
-      box-sizing: border-box;
-      border-radius: 6px;
     }
   }
 }
@@ -79,7 +73,7 @@
         }
 
         .header__name {
-          font-size: 13px;
+          font-size: $button-medium;
         }
 
         .header__arrow {
@@ -89,7 +83,7 @@
       }
 
       .header__login {
-        font-size: 13px;
+        font-size: $button-medium;
       }
     }
   }
@@ -108,7 +102,7 @@
         }
 
         .header__name {
-          font-size: 12px;
+          font-size: $button-small;
         }
 
         .header__arrow {
@@ -118,7 +112,7 @@
       }
 
       .header__login {
-        font-size: 12px;
+        font-size: $button-small;
       }
     }
   }
@@ -137,7 +131,7 @@
         }
 
         .header__name {
-          font-size: 10px;
+          font-size: $button-mobile;
         }
 
         .header__arrow {
@@ -146,7 +140,7 @@
       }
 
       .header__login {
-        font-size: 10px;
+        font-size: $button-mobile;
       }
     }
   }

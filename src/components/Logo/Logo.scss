@@ -2,10 +2,9 @@
 @import "../../sass/helpers/placeholders";
 
 .logo {
-  @extend %button-animation;
+  @extend %transparent-button;
+  @extend %hover-animation;
   padding: 0;
-  border: none;
-  background: $transparent;
   display: flex;
   align-items: center;
 
@@ -17,11 +16,10 @@
 
   .logo__project {
     @extend %font-bold;
+    @extend %text-caps-white;
     font-size: 18px;
     line-height: 1.22;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $white;
+    letter-spacing: $letter-spacing;
     margin: 0;
   }
 }

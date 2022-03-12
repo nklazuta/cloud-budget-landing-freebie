@@ -15,28 +15,22 @@
 
     .video__heading {
       @extend %font-semibold;
-      font-size: 36px;
-      line-height: 1.19;
-      margin: 0;
+      @extend %heading-laptop;
       padding-bottom: 4.72%;
     }
 
     .video__text {
       @extend %font-regular;
-      font-size: 14px;
-      line-height: 1.4;
-      text-align: justify;
-      margin: 0;
+      @extend %text-laptop;
+      text-align: $text-justify;
       padding: 5.4% 0;
     }
 
     .video__link {
       @extend %font-regular;
-      @extend %button-animation;
-      font-size: 14px;
-      line-height: 1.4;
-      border: none;
-      background-color: $transparent;
+      @extend %text-laptop;
+      @extend %transparent-button;
+      @extend %hover-animation;
       color: $coral;
       padding: 0;
     }
@@ -53,11 +47,10 @@
     border-radius: 15px;
 
     .video__play-button {
-      @extend %button-animation;
+      @extend %transparent-button;
+      @extend %hover-animation;
       width: 14.83%;
       padding: 0;
-      border: none;
-      background: $transparent;
       position: absolute;
       top: 39.55%;
       left: -7.42%;
@@ -74,15 +67,15 @@
   .video {
     .video__text-block {
       .video__heading {
-        font-size: 30px;
+        font-size: $heading-medium;
       }
 
       .video__text {
-        font-size: 13px;
+        font-size: $text-medium;
       }
 
       .video__link {
-        font-size: 13px;
+        font-size: $text-medium;
       }
     }
   }
@@ -92,15 +85,15 @@
   .video {
     .video__text-block {
       .video__heading {
-        font-size: 20px;
+        font-size: $heading-small;
       }
 
       .video__text {
-        font-size: 10px;
+        font-size: $text-small;
       }
 
       .video__link {
-        font-size: 10px;
+        font-size: $text-small;
         padding-bottom: 7%;
       }
     }
@@ -115,15 +108,7 @@
       width: 100%;
 
       .video__heading {
-        font-size: 18px;
-      }
-
-      .video__text {
-        font-size: 10px;
-      }
-
-      .video__link {
-        font-size: 10px;
+        font-size: $heading-mobile;
       }
     }
 

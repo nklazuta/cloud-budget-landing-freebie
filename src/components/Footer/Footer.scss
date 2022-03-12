@@ -4,7 +4,7 @@
 .footer {
   width: 100%;
   box-sizing: border-box;
-  background-color: $light-grey;
+  background: $light-grey;
   padding: 5.9% 11.53%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -19,18 +19,14 @@
 
     .footer__title {
       @extend %font-bold;
-      font-size: 18px;
-      line-height: 1.22;
-      color: $text-dark;
+      @extend %title-laptop;
       margin: 0;
       padding-bottom: 13%;
     }
 
     .footer__text {
       @extend %font-regular;
-      font-size: 12px;
-      line-height: 1.5;
-      color: $text-dark;
+      @extend %text-big-line;
       margin: 0;
       padding-right: 20%;
     }
@@ -52,7 +48,7 @@
       .footer__item {
         .footer__link {
           @extend %font-regular;
-          @extend %button-animation;
+          @extend %hover-animation;
           font-size: 12px;
           line-height: 1.6;
           text-decoration: none;
@@ -71,7 +67,8 @@
         padding-right: 13px;
 
         .footer__media {
-          @extend %button-animation;
+          @extend %transparent-button;
+          @extend %hover-animation;
 
           .footer__icon {
             width: 12px;
@@ -105,13 +102,11 @@
 
   .footer__copyright {
     @extend %font-regular;
+    @extend %text-small-line;
     grid-area: copyright;
-    font-size: 12px;
-    line-height: 1.17;
     color: $text-dark;
     position: relative;
     left: -5px;
-    margin: 0;
     padding-top: 8.6%;
   }
 }
@@ -120,7 +115,7 @@
   .footer {
     .footer__text-block {
       .footer__title {
-        font-size: 16px;
+        font-size: $title-medium;
       }
 
       .footer__text {
@@ -146,7 +141,7 @@
   .footer {
     .footer__text-block {
       .footer__title {
-        font-size: 14px;
+        font-size: $title-small;
       }
 
       .footer__text {

@@ -1,14 +1,44 @@
+//Центрирование
 $margin-center: 0 auto;
 
+//Параметры текста
+$letter-spacing: 0.05em;
+$text-justify: justify;
+
+//Размер шрифта основных заголовков и текста в компонентах
+$heading-medium: 30px;
+$heading-small: 20px;
+$heading-mobile: 18px;
+$text-medium: 12px;
+$text-small: 10px;
+$text-mobile: 9px;
+
+//Размер шрифта заголовков и текста в карточках и подвале
+$title-medium: 16px;
+$title-small: 14px;
+$title-mobile: 12px;
+$card-medium: 10px;
+$card-small: 9px;
+
+//Размер шрифта кнопок
+$button-medium: 13px;
+$button-small: 12px;
+$button-mobile: 10px;
+
+//Размер шрифта инпутов
+$input-medium: 14px;
+$input-small: 12px;
+
+//Цвета
 $text-black: #000;
 $text-dark: #101010;
 $text-contact: #121212;
 $border-grey: #333333;
 $placeholder: rgba(19, 39, 67, 0.5);
-$coral: #ED4C5C;
+$coral: #ed4c5c;
 $text-grey: rgba(16, 16, 16, 0.08);
-$light-grey: #FAFAFA;
-$white: #FFF;
+$light-grey: #fafafa;
+$white: #fff;
 $transparent: transparent;
 $red-gradient: linear-gradient(
   90deg,

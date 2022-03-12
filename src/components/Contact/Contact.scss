@@ -15,18 +15,14 @@
 
     .contact__heading {
       @extend %font-semibold;
-      font-size: 36px;
-      line-height: 1.19;
-      margin: 0;
+      @extend %heading-laptop;
       padding-bottom: 14.65%;
     }
 
     .contact__text {
       @extend %font-regular;
-      font-size: 14px;
-      line-height: 1.4;
-      text-align: justify;
-      margin: 0;
+      @extend %text-laptop;
+      text-align: $text-justify;
     }
   }
 
@@ -46,15 +42,13 @@
     .contact__input {
       @extend %font-regular;
       @extend %input-decoration;
+      @extend %text-input;
       width: 100%;
-      font-size: 16px;
-      line-height: 1.19;
       padding: 3.9% 5.78%;
 
       &::placeholder {
         @extend %font-regular;
-        font-size: 16px;
-        line-height: 1.19;
+        @extend %text-input;
         color: $placeholder;
       }
     }
@@ -76,25 +70,22 @@
     .contact__select {
       @extend %font-regular;
       @extend %input-decoration;
+      @extend %text-input;
       grid-area: select;
       width: 100%;
-      font-size: 16px;
-      line-height: 1.19;
       color: $placeholder;
       padding: 3.9% 5.78%;
     }
 
     .contact__submit-button {
       @extend %font-regular;
-      @extend %button-animation;
+      @extend %button-decoration;
+      @extend %hover-animation;
       grid-area: submit;
       width: 75%;
       max-width: 160px;
       background: $coral;
-      border-radius: 6px;
       border: 1.5px solid $coral;
-      font-size: 14px;
-      line-height: 1.21;
       text-transform: uppercase;
       color: $white;
       padding: 6.7% 12.5%;
@@ -106,11 +97,11 @@
   .contact {
     .contact__text-block {
       .contact__heading {
-        font-size: 30px;
+        font-size: $heading-medium;
       }
 
       .contact__text {
-        font-size: 12px;
+        font-size: $text-medium;
       }
     }
 
@@ -118,19 +109,19 @@
       row-gap: 20px;
 
       .contact__input {
-        font-size: 14px;
+        font-size: $input-medium;
 
         &::placeholder {
-          font-size: 14px;
+          font-size: $input-medium;
         }
       }
 
       .contact__select {
-        font-size: 14px;
+        font-size: $input-medium;
       }
 
       .contact__submit-button {
-        font-size: 12px;
+        font-size: $text-medium;
       }
     }
   }
@@ -140,11 +131,11 @@
   .contact {
     .contact__text-block {
       .contact__heading {
-        font-size: 20px;
+        font-size: $heading-small;
       }
 
       .contact__text {
-        font-size: 10px;
+        font-size: $text-small;
       }
     }
 
@@ -152,20 +143,20 @@
       row-gap: 15px;
 
       .contact__input {
-        font-size: 12px;
+        font-size: $input-small;
 
         &::placeholder {
-          font-size: 12px;
+          font-size: $input-small;
         }
       }
 
       .contact__select {
-        font-size: 12px;
+        font-size: $input-small;
       }
 
       .contact__submit-button {
         width: 85%;
-        font-size: 10px;
+        font-size: $text-small;
       }
     }
   }
@@ -181,7 +172,7 @@
       padding: 0;
 
       .contact__heading {
-        font-size: 18px;
+        font-size: $heading-mobile;
         padding-bottom: 8%;
       }
 

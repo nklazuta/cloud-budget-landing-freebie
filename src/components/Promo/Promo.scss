@@ -16,11 +16,10 @@
 
     .promo__heading {
       @extend %font-bold;
+      @extend %text-caps-white;
       font-size: 72px;
       line-height: 1.19;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: $white;
+      letter-spacing: $letter-spacing;
       margin: $margin-center;
     }
 
@@ -36,12 +35,10 @@
 
     .promo__sign-up-button {
       @extend %font-semibold;
-      @extend %button-animation;
+      @extend %hover-animation;
+      @extend %button-decoration;
       background: $white;
-      border-radius: 6px;
       border: none;
-      font-size: 14px;
-      line-height: 1.21;
       text-transform: uppercase;
       color: $coral;
       margin: $margin-center;
@@ -63,7 +60,7 @@
       }
   
       .promo__sign-up-button {
-        font-size: 13px;
+        font-size: $button-medium;
       }
     }
   }
@@ -82,7 +79,7 @@
       }
   
       .promo__sign-up-button {
-        font-size: 12px;
+        font-size: $button-small;
       }
     }
   }
@@ -102,7 +99,7 @@
       }
   
       .promo__sign-up-button {
-        font-size: 10px;
+        font-size: $button-mobile;
       }
     }
   }
