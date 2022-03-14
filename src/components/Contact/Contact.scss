@@ -83,6 +83,11 @@
       background-repeat: no-repeat;
       color: $placeholder;
       padding: 3.9% 5.78%;
+
+      &:disabled {
+        color: $placeholder;
+        opacity: 1;
+      }
     }
 
     .contact__submit-button {

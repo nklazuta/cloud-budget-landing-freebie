@@ -58,7 +58,7 @@ function Contact() {
           onChange={handleChange}
           required
         />
-        <select className="contact__select" name="service">
+        <select className="contact__select" name="service" disabled>
           <option className="contact__option" value="value">
             Select Service
           </option>
