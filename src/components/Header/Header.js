@@ -1,6 +1,6 @@
 import React from "react";
 import flag from "../../images/flag.svg";
-import arrow from "../../images/arrow.svg";
+import arrow from "../../images/arrow-icon.svg";
 import Logo from "../Logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import "./Header.scss";
