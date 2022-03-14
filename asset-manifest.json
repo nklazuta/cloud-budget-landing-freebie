@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cloud-budget-landing-freebie/static/css/main.0ecb9e36.css",
+    "main.css": "/cloud-budget-landing-freebie/static/css/main.e9529edf.css",
     "main.js": "/cloud-budget-landing-freebie/static/js/main.7c3470b5.js",
     "static/media/promo.jpg": "/cloud-budget-landing-freebie/static/media/promo.07c3fd00756becda9b95.jpg",
     "static/media/Lato-Semibold.ttf": "/cloud-budget-landing-freebie/static/media/Lato-Semibold.637ae3cbe5f4341bfb7b.ttf",
@@ -36,11 +36,11 @@
     "static/media/windows-icon.svg": "/cloud-budget-landing-freebie/static/media/windows-icon.8be67de2243687ec714146a996af5e41.svg",
     "static/media/select-arrow-icon.svg": "/cloud-budget-landing-freebie/static/media/select-arrow-icon.8f433f704b42b17a9b5c.svg",
     "static/media/play-button.svg": "/cloud-budget-landing-freebie/static/media/play-button.2169c08eccf93200f404ab37ffc01847.svg",
-    "main.0ecb9e36.css.map": "/cloud-budget-landing-freebie/static/css/main.0ecb9e36.css.map",
+    "main.e9529edf.css.map": "/cloud-budget-landing-freebie/static/css/main.e9529edf.css.map",
     "main.7c3470b5.js.map": "/cloud-budget-landing-freebie/static/js/main.7c3470b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ecb9e36.css",
+    "static/css/main.e9529edf.css",
     "static/js/main.7c3470b5.js"
   ]
 }
