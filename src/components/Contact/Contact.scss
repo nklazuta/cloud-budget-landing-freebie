@@ -87,6 +87,7 @@
       &:disabled {
         color: $placeholder;
         opacity: 1;
+        background-color: $transparent;
       }
     }
 
