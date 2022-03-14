@@ -59,7 +59,9 @@ function Contact() {
           required
         />
         <select className="contact__select" name="service">
-          <option className="contact__option">Select Service</option>
+          <option className="contact__option" value="value">
+            Select Service
+          </option>
         </select>
         <button className="contact__submit-button" type="submit">
           Submit Now

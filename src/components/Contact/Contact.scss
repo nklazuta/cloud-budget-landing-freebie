@@ -73,6 +73,14 @@
       @extend %text-input;
       grid-area: select;
       width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      background-image: url(../../images/select-arrow-icon.svg);
+      background-size: 14px 14px;
+      background-position: 95%;
+      background-repeat: no-repeat;
       color: $placeholder;
       padding: 3.9% 5.78%;
     }
@@ -118,6 +126,7 @@
 
       .contact__select {
         font-size: $input-medium;
+        background-size: 12px 12px;
       }
 
       .contact__submit-button {
@@ -152,6 +161,7 @@
 
       .contact__select {
         font-size: $input-small;
+        background-size: 10px 10px;
       }
 
       .contact__submit-button {
